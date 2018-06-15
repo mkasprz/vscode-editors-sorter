@@ -1,4 +1,4 @@
 # Sorting service
 
 ## Toggle sorting service
-    `extension.toggleSortingService`.
+    `editors-sorter.sortEditors`.

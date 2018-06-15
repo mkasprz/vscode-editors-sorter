@@ -3,7 +3,7 @@
     "displayName": "Editors sorter",
     "description": "Sorts active editors.",
     "version": "0.0.1",
-    "publisher": "kk",
+    "publisher": "KK",
     "engines": {
         "vscode": "^1.24.0"
     },
@@ -11,17 +11,13 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sortEditors",
-        "onCommand:extension.toggleSortingService"
+        "onCommand:editors-sorter.sortEditors"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [{
-            "command": "extension.sortEditors",
+            "command": "editors-sorter.sortEditors",
             "title": "Sort Editors"
-        }, {
-            "command": "extension.toggleSortingService",
-            "title": "Toggle Sorting Service"
         }]
     },
     "scripts": {
