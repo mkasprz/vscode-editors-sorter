@@ -1,0 +1,41 @@
+{
+    "name": "editors-sorter",
+    "displayName": "Editors sorter",
+    "description": "Sorts active editors.",
+    "version": "0.0.1",
+    "publisher": "kk",
+    "engines": {
+        "vscode": "^1.24.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.sortEditors",
+        "onCommand:extension.toggleSortingService"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [{
+            "command": "extension.sortEditors",
+            "title": "Sort Editors"
+        }, {
+            "command": "extension.toggleSortingService",
+            "title": "Toggle Sorting Service"
+        }]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "tslint": "^5.8.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}
