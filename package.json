@@ -2,8 +2,11 @@
     "name": "editors-sorter",
     "displayName": "Editors sorter",
     "description": "Sorts active editors.",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "KK",
+    "repository": {
+        "url": "https://github.com/mkasprz/vscode-editors-sorter"
+    },
     "engines": {
         "vscode": "^1.24.0"
     },
