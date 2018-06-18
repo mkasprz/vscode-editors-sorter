@@ -1,4 +1,4 @@
-# Sorting service
+# Editors sorter
 
 ## Command palette entry
     Sort Editors
